@@ -7,7 +7,7 @@ import SearchBar from './Components/SearchBar/SearchBar';
 import MovieInfo from './Components/MovieInfo/MovieInfo';
 
 
-type ShipData = {
+interface ShipData {
    model: string,
    manufacturer: string,
    cost_in_credits: string,

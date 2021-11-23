@@ -1,6 +1,6 @@
 import styles from './ShipInfo.module.css';
 
-type ShipData = {
+interface ShipData {
    model: string,
    manufacturer: string,
    cost_in_credits: string,

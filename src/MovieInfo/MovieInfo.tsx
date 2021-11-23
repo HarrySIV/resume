@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './MovieInfo.module.css';
 
-type ShipData = {
+interface ShipData {
    model: string,
    manufacturer: string,
    cost_in_credits: string,
@@ -33,7 +33,7 @@ useEffect(() => {
       const filmId = { films: ships.films.map( url => parseInt(url[28])) };
       for (let id of filmId.films) {
          switch (id) {
-            case 1: setShipInFilm((prevMovies: MovieData) => [...prevMovie, movies[0].title]); break;
+            case 1: setShipInFilm(shipInFilm.concat(movies[1].title)); break;
             case 2: setShipInFilm(shipInFilm.concat(movies[1].title)); break;
             case 3: setShipInFilm(shipInFilm.concat(movies[2].title)); break;
             case 4: setShipInFilm(shipInFilm.concat(movies[3].title)); break;
@@ -44,7 +44,7 @@ useEffect(() => {
       } 
    }
    getMovies();
-}, [])
+}, [shipInFilm, movies, ships.films])
 
    return (
       <div className={styles.movieInfo} id={`${ships.created}_movies`}>

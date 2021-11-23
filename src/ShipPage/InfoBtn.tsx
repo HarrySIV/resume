@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './InfoBtn.module.css';
 
-type ShipData = {
+interface ShipData {
    model: string,
    manufacturer: string,
    cost_in_credits: string,

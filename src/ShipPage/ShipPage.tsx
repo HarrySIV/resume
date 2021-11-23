@@ -1,7 +1,7 @@
 import styles from './ShipPage.module.css';
 import ShowMovieBtn from '../MovieInfo/ShowMovieBtn';
 
-type ShipData = {
+interface ShipData {
    model: string,
    manufacturer: string,
    cost_in_credits: string,
