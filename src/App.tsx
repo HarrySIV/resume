@@ -1,82 +1,49 @@
-import React, { useState, useEffect } from 'react';
 import styles from './App.module.css';
-import ShipPage from './Components/ShipPage/ShipPage';
-import ShipInfo from './Components/ShipInfo/ShipInfo';
-import InfoBtn from './Components/ShipPage/InfoBtn';
-import SearchBar from './Components/SearchBar/SearchBar';
-import MovieInfo from './Components/MovieInfo/MovieInfo';
+import Projects from './Components/Projects';
 
 
-interface ShipData {
-   model: string,
-   manufacturer: string,
-   cost_in_credits: string,
-   length: string;
-   max_atmosphering_speed:  string, 
-   crew: string, 
-   passengers: string, 
-   cargo_capacity: string, 
-   consumables: string, 
-   hyperdrive_rating: string, 
-   MGLT: string, 
-   starship_class: string,
-   films: string[], 
-   created: string, 
-   edited: string, 
-   url: string,
-}
-
-
-
-
-function App() {
-  const [starships, setStarships] = useState([]);
-  const [movieList, setMovieList] = useState([]);
-  const [filteredStarship, setFilteredStarships] = useState([]);
-  useEffect(() => {
-    const fetchStarships = () => {
-      fetch('https://swapi.dev/api/starships')
-      .then(response => response.json())
-      .then(data => setStarships(data.results));
-    }
-  fetchStarships();
-  }, []);
-
-  useEffect(() => {
-    const fetchMovieInfo = () => {
-    fetch('https://swapi.dev/api/films')
-    .then(response => response.json())
-    .then(data => setMovieList(data.results));
-    }
-    fetchMovieInfo();
- }, []);
-
-  if(!starships.length) return (<h1>...</h1>);
-
-  //setStudents to a new array of filteredStudents
-  const searchQueryHandler = (text: string) => {
-    if (text) {
-      const searchQuery = starships.filter((newFilteredStarships: ShipData) => {
-      return newFilteredStarships.model.toLowerCase().includes(text.toLowerCase());
-      })
-      setFilteredStarships(searchQuery);
-    } else if (!text) { return setFilteredStarships(starships);}
-  }
-
+const App = () => {
   return (
     <div className={styles.body}>
-      <SearchBar onChange={searchQueryHandler} />
-      {filteredStarship.map((ships: ShipData) => (
-        <div className={styles.ships}>
-          <div className={styles.container} key={ships.created} id={ships.edited}>
-            <ShipPage ships={ships} />
-            <InfoBtn ships={ships}/>
-            <ShipInfo ships={ships} />
-          </div>
-          <MovieInfo ships={ships} movies={movieList} />
-        </div>
-      ))}
+       <section className={styles.container}>
+          <h1 id={styles.mainTitle}>HARRY SANDERS IV</h1> 
+          <p><em>Seeking an entry level computer programming position 
+             <br />Daytona State College - Associates of Arts
+             <br />Udemy
+             <br />Palm Coast, FL 32164
+             </em>
+          </p>
+       </section>
+       <hr />
+       <Projects />
+
+       <hr />
+            <ul>
+               E-Mail: harry.sandersiv@yahoo.com <em> (preferred)</em>
+               <a href="https://github.com/HarrySIV/">GitHub</a>
+            </ul>
+            <section className={styles.projects_card}>
+               <form action="mailto:harry.sandersiv@yahoo.com" method="post" encType="text/plain">
+                  <table>
+                     <tr>
+                        <td><label htmlFor="name">Your Name:</label></td>
+                        <td><input type="text" name="yourName" required /> </td>
+                     </tr>
+                     <tr>
+                        <td><label htmlFor="email">E-mail:</label></td>
+                        <td><input type="email" name="yourEmail" required /></td>
+                     </tr>
+                     <tr>
+                        <td><label htmlFor="textarea">Message:</label></td>
+                        <td><textarea name="yourMessage" cols={21} rows={4} /></td>
+                     </tr>
+                  </table>
+                  <input type="submit" />
+               </form>
+              </section>
+       <p className={styles.copyright}>© 2021 Harry Sanders.</p>
     </div>
-  )
+ )
 }
+
 export default App;

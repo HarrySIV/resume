@@ -1,69 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+
+:root {
+   --iceblue: rgba(34, 197, 242, 0.35);
+   --textcolor: rgba(50, 50, 50, 0.7);
+}
+
+br {
+   margin: 0;
+   padding: 0;
+}
+
+hr {
+   border-color: var(--textcolor);
+   border-style: none;
+   border-top-style: dotted;
+   border-width: .05rem;
+   margin: 0;
+   width: 100%;
+}
+
+a {
+   text-decoration: none;
+   color: var(--textcolor);
+   font-size: 1.25rem;
+}
+
+a:hover {
+   color: black;
+}
+
+p {
+   color: var(--textcolor);
+   text-align: center;
+}
+
+form {
+   padding: 1rem;
+   margin: 0;
+}
+
 .body {
-  background-color: black;
-  max-width: fit-content;
+   color: var(--textcolor);
+   font-family: Mate, Arial, sans-serif;
+   margin: 0;
+   background-image: url("./pictures/iceberg.png");
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
-
-h1, h2, h3, h4, h5 {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  padding: 0.25rem;
-  margin: 0;
-  text-transform: capitalize;
-}
-
-
-
-.App {
-  text-align: center;
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+.altcontainer {
+   /* background-color: var(--iceblue);
+   height: 100vh; */
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .container {
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 1px solid white;
-  border-radius: 1rem;
-  height: 17.45rem;
-  width: 44rem;
-  align-items: center;
-  margin: 5vh 1rem 5vh 1rem;
+   /* height: 100vh; */
 }
 
-.ships {
-  display: flex;
-  flex: auto;
-  flex-direction: row;
+.copyright {
+   color: white;
+   background-color: var(--iceblue);
+   margin: 0;
+   padding: 10px;
 }
-
-@media (max-width: 812px) {
-  body {
-    width: 90%;
-  }
-  .container {
-    display: inline-block;
-    width: 20rem;
-    overflow: scroll;
-  }
-  
-  
-
-
+#mainTitle {
+   font-family: Nunito sans, Mate, Arial, sans-serif;
+   color: rgba(34, 197, 242);
+   font-size: 3.75rem;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   padding: 25rem 0 0 0;
 }
-

@@ -1,0 +1,13 @@
+.card {
+   display: inline-block;
+   height: 10rem;
+   width: 4rem;
+   overflow: hidden;
+}
+
+.innercard {
+   display: inline;
+   background-color: white;
+   margin: 1rem;
+   padding: 1rem;
+}
