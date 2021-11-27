@@ -1,13 +1,24 @@
 .card {
    display: inline-block;
-   height: 10rem;
-   width: 4rem;
+   height: 7rem;
+   width: 10rem;
    overflow: hidden;
-}
-
-.innercard {
    display: inline;
    background-color: white;
    margin: 1rem;
    padding: 1rem;
+   border-radius: 10%;
+   text-align: center;
 }
+
+.projCard {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.topCard {
+   height: 7rem;
+   width: 10rem;
+}
+
+

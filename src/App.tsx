@@ -16,10 +16,10 @@ const App = () => {
        </section>
        <hr />
        <Projects />
-
        <hr />
+       <h2 className={styles.pageTitle}>Contact Me</h2>
             <ul>
-               E-Mail: harry.sandersiv@yahoo.com <em> (preferred)</em>
+               <h3>E-Mail: harry.sandersiv@yahoo.com <em> (preferred)</em></h3>
                <a href="https://github.com/HarrySIV/">GitHub</a>
             </ul>
             <section className={styles.projects_card}>

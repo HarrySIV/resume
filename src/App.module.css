@@ -50,14 +50,15 @@ form {
 }
 
 .altcontainer {
-   /* background-color: var(--iceblue);
-   height: 100vh; */
-   display: flex;
-   flex-wrap: wrap;
+   background-color: var(--iceblue);
+   height: 100vh;
+   text-align: center;
+   margin: 0;
 }
 
 .container {
-   /* height: 100vh; */
+   margin: 0;
+   height: 100vh;
 }
 
 .copyright {
@@ -66,6 +67,18 @@ form {
    margin: 0;
    padding: 10px;
 }
+
+.pageTitle {
+   margin: 0;
+   padding: 1rem;
+   text-align: center;
+}
+
+.projLang {
+   position: relative;
+   bottom: -40rem;
+}
+
 #mainTitle {
    font-family: Nunito sans, Mate, Arial, sans-serif;
    color: rgba(34, 197, 242);
