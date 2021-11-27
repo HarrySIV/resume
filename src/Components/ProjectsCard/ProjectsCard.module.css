@@ -1,9 +1,6 @@
 .card {
-   display: inline-block;
-   height: 7rem;
    width: 10rem;
    overflow: hidden;
-   display: inline;
    background-color: white;
    margin: 1rem;
    padding: 1rem;
@@ -16,9 +13,14 @@
    flex-wrap: wrap;
 }
 
+.projName {
+   margin: 0;
+   padding: 0;
+}
+
 .topCard {
-   height: 7rem;
-   width: 10rem;
+   height: 4rem;
+   padding: 1rem;
 }
 
 
