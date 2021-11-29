@@ -5,7 +5,7 @@ const projects = [
    {id: 1, name: `Star Wars Ships`, link: `https://harrysiv.github.io/swships/`, description: `An app that fetches Star Wars ship info and displays it.`},
    {id: 2, name: `Students`, link: `https://harrysiv.github.io/fetchstudents-app/`, description: `An app that fetches a list of students and displays them.`},
    {id: 3, name: `Jokes`, link: `https://harrysiv.github.io/jokes/`, description: `An app that fetches a random joke and displays it.`},
-   {id: 4, name: `D&D`, link: `none`, description: `An app that creates a character and allows the user to fight an enemy, text-rpg style.`},
+   {id: 4, name: `D&D`, link: `https://harrysiv.github.io/Dndjs/`, description: `An app that creates a character and allows the user to fight an enemy, text-rpg style.`},
 ];
 
 
