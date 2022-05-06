@@ -7,7 +7,7 @@ const App = () => {
     <div className={styles.body}>
        <section className={styles.container}>
           <h1 id={styles.mainTitle}>HARRY SANDERS IV</h1> 
-          <p><em>Seeking an entry level computer programming position 
+          <p><em>Seeking a web developer position 
              <br />Daytona State College - Associates of Arts
              <br />Udemy
              <br />Palm Coast, FL 32164
