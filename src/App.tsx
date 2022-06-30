@@ -41,7 +41,7 @@ const App = () => {
                   <input type="submit" />
                </form>
               </section>
-       <p className={styles.copyright}>© 2021 Harry Sanders.</p>
+       <p className={styles.copyright}>© 2022 Harry Sanders.</p>
     </div>
  )
 }
