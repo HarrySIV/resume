@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/resume/static/css/main.a92baa73.css",
+    "main.js": "/resume/static/js/main.e967545a.js",
+    "static/media/iceberg.png": "/resume/static/media/iceberg.7c8bfaf09017e46c595e.png",
+    "index.html": "/resume/index.html",
+    "main.a92baa73.css.map": "/resume/static/css/main.a92baa73.css.map",
+    "main.e967545a.js.map": "/resume/static/js/main.e967545a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a92baa73.css",
+    "static/js/main.e967545a.js"
+  ]
+}
