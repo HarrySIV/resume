@@ -1,5 +1,3 @@
-import styles from './ProjectsCard.module.css';
-
 const projects = [
   {
     id: 0,
@@ -54,11 +52,11 @@ const projects = [
 
 const ProjectsCard = () => {
   return (
-    <div className={styles.projCard}>
+    <div className="projCard">
       {projects.map((project) => (
-        <a className={styles.card} href={project.link}>
-          <div className={styles.topCard}>
-            <h2 className={styles.projName}>{project.name}</h2>
+        <a className="card" href={project.link}>
+          <div className="topCard">
+            <h2 className="projName">{project.name}</h2>
           </div>
           <hr />
           <h6 id={`${project.id}`}>{project.description}</h6>
